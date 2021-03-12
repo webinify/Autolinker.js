@@ -2,7 +2,7 @@
  * Autolinker.js
  * 3.14.2
  *
- * Copyright(c) 2020 Gregory Jacobs <greg@greg-jacobs.com>
+ * Copyright(c) 2021 Gregory Jacobs <greg@greg-jacobs.com>
  * MIT License
  *
  * https://github.com/gregjacobs/Autolinker.js
@@ -1143,6 +1143,8 @@
                     return 'https://www.facebook.com/hashtag/' + hashtag;
                 case 'instagram':
                     return 'https://instagram.com/explore/tags/' + hashtag;
+                case 'aktagram':
+                    return 'https://aktagram.com/hashtags/' + hashtag;
                 default: // Shouldn't happen because Autolinker's constructor should block any invalid values, but just in case.
                     throw new Error('Unknown service name to point hashtag to: ' + serviceName);
             }
